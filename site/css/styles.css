@@ -1,0 +1,553 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  font-family: 'Oxygen','Lora' sans-serif;
+}
+
+/* header start */
+
+#header-panel{
+  /* border-radius: 0; */
+  /*border: 1px solid black;*/
+  padding: 0px;
+  margin : 0px;
+}
+
+#nav-header{
+  background-color: darkblue;
+  color: white;
+}
+
+.navbar-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height : 100px;
+}
+
+.navbar-brand h1{
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: 'Oxygen','Lora', sans-serif;
+  margin-top: 0px;
+  color: white;
+}
+
+.navbar-brand span{
+  font-weight: bold;
+  font-size: 1em;
+  font-family: 'Oxygen','Lora', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.navbar-header a:hover, .navbar-header a:focus {
+  text-decoration: none;
+}
+
+#nav-list  {
+  padding-top: 10px;
+  font-size: 1em;
+  display: inline;
+  list-style: none;
+}
+
+#nav-list a {
+  color: white;
+  border: 1px solid darkblue;
+}
+
+#nav-list a:hover {
+  background: red;
+}
+
+#nav-list #homeButton {
+  /* background: red; */
+  border: 1px solid darkblue;
+}
+
+/* #nav-list  .bgred{
+	background: red;
+} */
+.navbar-header button.navbar-toggle:hover {
+  background: red;
+}
+
+.navbar-header button.navbar-toggle {
+  border: 1px solid white;
+}
+
+.navbar-header .icon-bar {
+  border: 1px solid white;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: 40px;
+  padding-bottom: -10px;
+}
+/* header end */
+
+/* home page start */
+.container .jumbotron {
+  border: 2px solid darkblue;
+}
+
+.container .jumbotron {
+  margin-top: 30px;
+  padding: 0;
+}
+
+#sightseeing-tile, #activities-tile, #eateries-tile, #events-tile, #map-tile {
+  height: 202px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+  overflow: hidden;
+  
+}
+
+#sightseeing-tile:hover, #activities-tile:hover,#eateries-tile:hover, #events-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#sightseeing-tile {
+  background: url('../images/sightseeing.jpg') no-repeat;
+  background-position: center;
+}
+
+#activities-tile {
+  background: url('../images/activities.jpg') no-repeat;
+  background-position: center;
+}
+
+#eateries-tile {
+  background: url('../images/eateries.jpg') no-repeat;
+  background-position: center;
+}
+
+#events-tile {
+  background: url('../images/events.jpg') no-repeat;
+  background-position: center;
+}
+
+#sightseeing-tile span, #activities-tile span,#eateries-tile span, #events-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .7;
+}
+
+/* home page end */
+
+
+/* sightseeing-categories start */
+.sightseeing-category-tile{
+	position: relative;
+	border: 2px solid darkblue;
+	border-radius: 5px;
+	overflow: hidden;
+	width: 303px;
+	height: 171px;
+	margin: 0 auto 15px;
+}
+
+
+.sightseeing-category-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #fff;
+	color: #000;
+	opacity: 0.8;
+	
+}
+
+.sightseeing-category-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#sightseeing-categories-title + div{
+	margin-bottom: 50px;
+}
+/* sightseeing-categories end */
+
+
+
+
+/* single-category start*/
+
+.sightseeing-item-tile{
+	margin-top: 25px;
+	
+}
+
+.sightseeing-item-tile hr{
+	width: 80%;
+}
+
+.sightseeing-item-tile{
+	margin-bottom: 25px;
+}
+
+.sightseeing-item-photo{
+	/* position: relative; */
+	border: 2px solid darkblue;
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 0;
+	margin-right: -15px;
+	margin-left: auto;
+	margin-bottom: 20px;
+	max-width: 768px;
+}
+
+.sightseeing-item-description{
+	padding-right: 30px;
+	
+}
+
+h3.sightseeing-item-title{
+	margin: 0 0 10px;
+}
+
+.sightseeing-item-details{
+	font-size: .9em;
+	font-style: italic;
+}
+
+#sightseeing-item-title + div{
+	margin-bottom: 50px;
+}
+/* single-category end*/
+
+
+
+
+
+/*events page start*/
+
+#event-content{
+  border: 2px solid darkblue;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  padding: 0px 30px 10px 20px;
+}
+
+#event-content h1{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: skyblue;
+  /*border: 1px solid darkblue;*/
+  margin-bottom: 60px;
+  padding: 20px 40px 20px 40px;
+}
+
+#event-content h2{
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 0px;
+  text-align: center;
+  
+}
+
+#event-content section{
+ /*padding: 2px;*/
+}
+
+#event-content #list{
+  text-align: left;
+  font-size: 1em;
+  font-weight: 500;
+  text-overflow: auto;
+  /*border: 1px solid darkblue;*/
+}
+
+#event-content #list .timing{
+ font-weight: 500;
+ font-size: 1em;
+}
+
+#event-content #list .event{
+  color: black;
+  font-size: .8em;
+  font-weight: 500;
+}
+
+#event-content #avril{
+  color: skyblue;
+}
+
+#event-content #mai{
+  color: magenta;
+}
+
+#event-content #juin{
+  color: blue;
+}
+
+#event-content #juillet{
+  color: magenta;
+ }
+
+#event-content #aout{
+  color: green;
+}
+
+#event-content #septembre{
+  color: blue;
+}
+
+#event-content #octobre{
+  color: red;
+}
+
+
+/*events page end*/
+
+
+
+
+/* footer start */
+
+.footer-panel {
+  text-align: left;
+  background-color: red;
+  color:white;
+  margin-bottom: 15px;
+  border: 1px solid darkblue;
+}
+
+.footer-panel #sub-footer-1 {
+  margin-top: 15px;
+
+  padding: 30px 20px 60px 20px;
+  border-top: 0;
+  font-size: 1em;
+  line-height: .8;
+  text-align: left;
+}
+
+#hours, #address,#access  {
+  line-height: 1.5;
+}
+
+#hours > span, #address > span, #access > span,#acknowledgement > span {
+  font-weight: bold;
+}
+
+
+.footer-panel #sub-footer-2 {
+  
+  padding-top: 0px;
+  background-color: white;
+  color: red;
+  font-size: .8em;
+}
+
+#acknowledgement{
+	font-size: 1em;
+  line-height: 1.3;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#copyright{
+	font-size: 1.1em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* footer end */
+
+
+
+/********** Large devices (desktops) only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    /* home page start */
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
+   /* home page end */
+}
+
+/********** Medium devices (i-pad or notebooks) only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* home page start*/
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  /* home page end */
+}
+
+/********** Small devices (small tablets or mobiles) only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* header start*/
+  .navbar-brand {
+    height : 100px;
+  }
+
+  .navbar-brand h1 { /* Park name */
+   font-size: 1.5em;
+ }
+  /* header end*/
+  
+  /* home page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+    
+  }
+  /* home page end */
+  
+
+
+  
+}
+
+/********** Extra small devices (some mobiles) only **********/
+@media (max-width: 767px) {
+  /* header start*/
+  .navbar-brand {
+    height : 100px;
+  }
+  
+
+  #myNavbar a { /* Collapsed nav menu text */
+    font-size: .8em;
+  }
+ 
+ .navbar-brand h1 { /* Park name */
+   font-size: 1.5em;
+ }
+ 
+ .navbar-brand span { /* Paris Arrondisement */
+   font-size: .7em;
+ }
+
+ #nav-list span{
+  margin: 0px 10px 0px 5px;
+ }
+
+ /* header end*/
+
+ #sightseeing-tile, #activities-tile, #eateries-tile, #events-tile, #map-tile {
+  
+  width: 360px;
+  margin: 0 auto 15px;
+}
+
+  /* sightseeing-category start*/
+.sightseeing-item-photo{
+	margin-right: auto;
+}
+.sightseeing-item-description{
+	
+	text-align: center;
+}
+
+ /* sightseeing-category end*/
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 375px) {
+  /* header start */
+  .navbar-brand h1{ /* Park name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  
+  .navbar-brand span{ /* Paris Arrondisement */
+    padding: 0;
+    font-size: 4vw;
+  }
+  /* header end */
+  
+  /* home page start */
+  #sightseeing-tile, #activities-tile, #eateries-tile, #events-tile, #map-tile {
+    width: 250px;
+    margin: 0 auto 15px;
+  }
+  /* home page end */
+  
+  /* sightseeing categories*/
+  
+  .col-xxs-12{
+	  
+	  position: relative;
+	  padding-right: 15px;
+	  padding-left: 15px;
+	  float: left;
+	  width: 100%;
+  }
+  /* sightseeing categories*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+span.homeIcon:before { 
+  font-family: FontAwesome; 
+  content: "\f015"; 
+}
+span.cutleryIcon:before { 
+  font-family: FontAwesome; 
+  content: "\f0f5"; 
+}
+span.calenderIcon:before { 
+  font-family: FontAwesome; 
+  content: "\f133"; 
+}
+span.calenderCheckIcon:before { 
+  font-family: FontAwesome; 
+  content: "\f274"; 
+}
+span.childIcon:before { 
+  font-family: FontAwesome; 
+  content: "\f1ae"; 
+}
+
+span.binocularsIcon:before { 
+  font-family: FontAwesome; 
+  content: "\f1e5"; 
+}
+
+span.infoIcon:before { 
+  font-family: FontAwesome; 
+  content: "\f129"; 
+}
