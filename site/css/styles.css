@@ -206,17 +206,54 @@ body {
 	margin-bottom: 25px;
 }
 
-.sightseeing-item-photo{
-	/* position: relative; */
-	border: 2px solid darkblue;
-	border-radius: 5px;
-	overflow: hidden;
-	padding: 0;
-	margin-right: -15px;
-	margin-left: auto;
-	margin-bottom: 20px;
-	max-width: 768px;
+/* .sightseeing-item-photo{
+  position: relative;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 768px;
+
+
+ 
 }
+ */
+.sightseeing-item-photo{
+  position: relative;
+  border: 2px solid darkblue;
+  border-radius: 5px; 
+ /*  overflow: hidden;  */
+  padding: 10px 10px 30px 10px;  
+
+ 
+ width: 303px;
+ height: 191px;
+ margin: 0 auto 15px; 
+  
+
+}
+
+/*flowers page start*/
+
+.sightseeing-item-photo img {
+   -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+
+
+}
+.sightseeing-item-photo img:hover {
+    -webkit-transform: rotate(7deg)  scale(1.5);
+    -moz-transform: rotate(7deg)  scale(1.5);
+    -o-transform: rotate(7deg)  scale(1.5);
+    transform: rotate(7deg)  scale(1.5);
+    z-index: 10;
+}
+/*flowers page end*/
 
 .sightseeing-item-description{
 	padding-right: 30px;
@@ -324,6 +361,42 @@ h3.sightseeing-item-title{
 
 
 
+
+
+
+/*about page start*/
+
+#about-content{
+  border: 2px solid darkblue;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  padding: 0px 30px 10px 20px;
+}
+
+#about-content h1{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: red;
+  /*border: 1px solid darkblue;*/
+  margin-bottom: 60px;
+  padding: 20px 40px 20px 40px;
+}
+
+#about-content h2{
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 0px;
+  text-align: center;
+  color: red;
+}
+
+#about-content section p{
+  color: blue;
+ /*padding: 2px;*/
+}
+
+/*about page end*/
 
 /* footer start */
 
